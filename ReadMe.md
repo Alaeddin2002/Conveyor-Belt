@@ -19,7 +19,7 @@ When the import command is done insert the command :
 
 A question will be popped up to ask about the folder name you want
 
-Note that the laptop camera will open as soon as the command is entered. After three seconds the function will start taing pictures.
+Note that the laptop camera will open as soon as the command is entered. After three seconds the function will start taking pictures.
 
 The function will not take pictures if a hand is present on camera 
 
