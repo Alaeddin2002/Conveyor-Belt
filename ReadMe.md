@@ -7,7 +7,7 @@
 First open Terminal
 Go to folder directory that you just installed
 
-cd downloads/Conveyor-Belt/
+    cd downloads/Conveyor-Belt/
 
 Then insert the import command:
     
