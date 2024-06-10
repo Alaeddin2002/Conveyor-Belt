@@ -5,6 +5,10 @@
 ### The Default setting for the recording duration is 6 seconds, this can be changed if you open Data_Gen.py and change the argument for the labelling function
 
 First open Terminal
+Go to folder directory that you just installed
+
+cd downloads/Conveyor-Belt/
+
 Then insert the import command:
     
     pip install opencv-python
