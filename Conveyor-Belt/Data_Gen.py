@@ -36,14 +36,13 @@ def labelling (sku):
     
     print('Camera will start capturing')
     print("To stop Capturing, enter http://127.0.0.1:5000/stop_capture")
-    #seconds = int(second)
+
     #Importing Object Detection model to infer live video from it
     CLIENT = InferenceHTTPClient(
     api_url="https://detect.roboflow.com",
     api_key="Hzoy0ZJOqJZGo8xqaqhG"
     )
-    # add sku number to name your file
-    #sku = input("What is the folder name/sku number?")
+
 
     #file will be saved to downloads folder
     path = sku
@@ -83,8 +82,7 @@ def labelling (sku):
         
         return_value,image = camera.read()
         
-        #show user the camera recording
-        #cv2.imshow('image',image)
+
         cv2.waitKey(1)
         
         
@@ -127,16 +125,18 @@ def intro():
     
     return messages
 
+#End point to start capture, by going to http://127.0.0.1:5000/start/sku, and replace sku with the sku name you want
 @app.route('/start/<sku>')
 def start_capture(sku):
     global capture
+    #start image capture
     capture = True
     labelling(sku)
     return 'images are in a folder in downloads, your sku is the name of it'
     
     
 
-
+#End point to stop capture, by going to http://127.0.0.1:5000/stop_capture
 @app.route('/stop_capture')
 def stop_capture():
     global capture
