@@ -19,11 +19,11 @@ When the import command is done insert the command :
     python Data_Gen.py
 
 To use the API, and start the camera to take pictures  go to 
-' http://127.0.0.1:5000/start/sku '
+ http://127.0.0.1:5000/start/sku 
 replace sku with the sku name you want.
 
 To stop capturing, go to 
-' http://127.0.0.1:5000/stop_capture'  
+ http://127.0.0.1:5000/stop_capture 
 
 Images will be saved in a folder where your directory is  with the sku number on it.
 Pictures are saved and filtered for both their bluriness, hand detection, and object detection.
