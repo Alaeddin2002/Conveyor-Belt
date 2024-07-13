@@ -9,21 +9,26 @@ Go to folder directory that you just installed
 
     cd downloads/Conveyor-Belt/
 
-Then insert the import command:
+Then insert the import commands:
     
     pip install opencv-python
+    pip install flask
 
 When the import command is done insert the command :
 
     python Data_Gen.py
 
-A question will be popped up to ask about the folder name you want
+To use the API, and start the camera to take pictures  go to 
+' http://127.0.0.1:5000/start/sku '
+replace sku with the sku name you want.
 
-Note that the laptop camera will open as soon as the command is entered. After three seconds the function will start taking pictures.
+To stop capturing, go to 
+' http://127.0.0.1:5000/stop_capture'  
+
+Images will be saved in a folder where your directory is  with the sku number on it.
+Pictures are saved and filtered for both their bluriness, hand detection, and object detection.
 
 The function will not take pictures if a hand is present on camera 
-
-After the camera window is closed, there will be a folder in the Connveyor-Belt folder, where pictures are saved and filtered for both their bluriness and hand detection. 
 
 The Background Thread is imported to the Data_Gen.py, it is activated to detect bluriness in pictures at the same time while the function takes another picture.
 
