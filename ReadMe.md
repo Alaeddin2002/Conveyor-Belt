@@ -13,6 +13,9 @@ Then insert the import commands:
     
     pip install opencv-python
     pip install flask
+    pip install mediapipe
+    pip install inference
+
 
 When the import command is done insert the command :
 
